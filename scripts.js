@@ -27,7 +27,7 @@ async function createUrl(id) {
         return;
     }
 
-    const newURL = 'http://localhost:3000/url/getNewURL/';
+    const newURL = 'https://urlshortner-server-zkbf.onrender.com/url/getNewURL/';
 
     const data = {
         "url": url
@@ -78,7 +78,7 @@ async function getAnalysis() {
         return;
     }
 
-    const newURL = `http://localhost:3000/url/analyticsURL/?id=${id}`;
+    const newURL = `https://urlshortner-server-zkbf.onrender.com/url/analyticsURL/?id=${id}`;
 
     try {
         const response = await fetch(newURL, {
@@ -121,7 +121,7 @@ function openLoginPage() {
 async function receiveSignupData(data) {
     console.log('Received signup data:', data);
 
-    const newURL = 'http://localhost:3000/UserDetails/createUser/';
+    const newURL = 'https://urlshortner-server-zkbf.onrender.com/UserDetails/createUser/';
 
     try {
         const response = await fetch(newURL, {
@@ -144,7 +144,7 @@ async function receiveSignupData(data) {
 async function receiveLoginData(data) {
     console.log('Received signup data:', data);
 
-    const newURL = 'http://localhost:3000/UserDetails/userLogin/';
+    const newURL = 'https://urlshortner-server-zkbf.onrender.com/UserDetails/userLogin/';
 
     try {
         const response = await fetch(newURL, {
